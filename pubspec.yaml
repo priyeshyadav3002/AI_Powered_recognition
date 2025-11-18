@@ -1,0 +1,28 @@
+name: object_detector_fresh
+description: "AI Object Detector using TFLite Flutter (tflite_flutter)"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.10.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  camera: ^0.10.6
+  tflite_flutter: ^0.12.1
+  image: ^4.1.7
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/detect.tflite
+    - assets/labelmap.txt
